@@ -1,0 +1,131 @@
+.App {
+    margin: 0 auto;
+    font-family: Helvetica, sans-serif;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    color: #fff;
+    background-color: #48b393;
+}
+
+.header h1 {
+    font-size: 1.625rem;
+}
+
+.header h1, div h2 {
+    text-align: center;
+}
+
+.search {
+    position: relative;
+    top: 80px;
+    padding: 0 20px;
+    margin: 20px auto;
+    max-width: 640px;
+    text-align: center;
+}
+
+div h3 {
+    font-size: 1.5rem;
+    color: #a52a2a;
+}
+
+.searchbook {
+    text-align: center;
+}
+
+#category-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.filter-option, .active-option {
+    padding: 2px 10px 5px;
+    font-size: .875rem;
+    font-weight: 500;
+    margin: 10px 0 0;
+    border-radius: 5px;
+    background-color: #7fffd4;
+}
+
+.filter-option:hover, .active-option {
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    background-color: #48b393;
+    transition: all 0.1s;
+}
+
+.book-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 30px auto;
+}
+
+.book-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    width: 260px;
+    height: auto;
+    font-size: 1rem;
+    margin: 20px auto;
+    background-color: #fafafa;
+    border: 1px solid #d3d3d3;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.book-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 15px 0;
+    gap: 10px;
+}
+
+.book-image {
+    width: 80px;
+    height: 122px;
+}
+
+.book-descript p {
+    margin: 5px;
+} 
+
+@media only screen and (min-width: 490px) {
+
+    .filter-option, .active-option {
+        padding: 4px 5px 7px;
+    }    
+}
+
+@media only screen and (min-width: 768px) {
+    
+    .search {
+        max-width: 720px;
+    }
+
+    .filter-option, .active-option {
+        font-size: 1rem;
+        padding: 5px 10px 8px;
+    }   
+
+    .book-item {
+        width: 300px;
+        flex-direction: row;
+    }
+    
+}
